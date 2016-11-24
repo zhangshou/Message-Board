@@ -59,6 +59,11 @@ npm install html-webpack-plugin --save
 npm install open-browser-webpack-plugin --save
 ```
 
+## 加载图片和css
+```
+npm install style-loader css-loader url-loader file-loa
+der --save
+```
 
 
 
