@@ -6,20 +6,20 @@ export default class CommentForm extends React.Component{
         return (
             <form className='form-horizontal'>
                 <div className="form-group">
-                    <label className='control-label col-md-2' for="name">姓名</label>
-                    <div className='col-md-10'>
-                        <input type="text" className="form-control" id='name' name='name'/>
+                    <label className="control-label col-md-1" htmlFor="name">姓名</label>
+                    <div className="col-md-11">
+                        <input className="form-control" type="text" id="name" name="name"/>
                     </div>
                 </div>
                 <div className="form-group">
-                    <label className='control-label col-md-2' for="content">内容</label>
-                    <div className='col-md-10'>
-                        <textarea class="form-control" id='content' name="content" cols="30" rows="10"></textarea>
+                    <label className="control-label col-md-1" htmlFor="content">内容</label>
+                    <div className="col-md-11">
+                        <textarea name="content" id="content" cols="30" rows="10" className="form-control"></textarea>
                     </div>
                 </div>
                 <div className="form-group">
-                    <div className='col-md-10 col-md-offset-2'>
-                        <button type='button' className="btn btn-primary">留言</button>
+                    <div className="col-md-10 col-md-offset-1">
+                        <button className="btn btn-primary" type="button">留言</button>
                     </div>
                 </div>
             </form>
