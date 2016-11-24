@@ -30,7 +30,8 @@ module.exports={
             },
             {
                 test:/\.(png|jpg|bmp|gif|eot|svg|ttf|woff|woff2)$/,
-                loader:'url'
+                //limit设置大小,大于4k不打包到build.js里面
+                loader:'url?limit=4096'
             }
         ]
     },
