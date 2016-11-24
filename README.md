@@ -47,6 +47,18 @@ package.json添加脚本
  npm run dev
 ```
 
+## html-webpack-plugin
+用于读取模板，插入打包后的输出文件，然后保存到目标文件里去
+```
+npm install html-webpack-plugin --save
+
+```
+## open-browser-webpack-plugin
+当打包完成后，自动打开浏览器
+```
+npm install open-browser-webpack-plugin --save
+```
+
 
 
 

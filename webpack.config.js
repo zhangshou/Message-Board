@@ -1,12 +1,16 @@
 //导出一个配置对象
+//
+var HtmlWebpackPlugin=require('html-webpack-plugin');
+var OpenBrowserWebpackPlugin=require('open-browser-webpack-plugin');
 module.exports={
     entry:'./app/index.js',//入口文件
     output:{
         path:'./build',//打包后的目录名
         filename:'bundle.js'//指定打包后的文件名
     },
-    //配置webpack-dev-server
+    //配置webpack-dev-server,实时刷新页面
     devServer:{
+        inline:true,
         port:8080,//指定端口号
         contentBase:'./build'//指定静态文件根目录
     },
@@ -21,5 +25,15 @@ module.exports={
                 loader:'babel'
             }
         ]
-    }
+    },
+    plugins:[
+        //根据模板自动生成build目录下的html页面
+        new HtmlWebpackPlugin({
+            template:'./app/index.html'
+        }),
+        //当打包完成后会自动打开默认浏览器并访问url配置的地址
+        new OpenBrowserWebpackPlugin({
+            url:'http://localhost:8080'
+        })
+    ]
 };
