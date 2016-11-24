@@ -14,8 +14,13 @@
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.8",
     "babel-preset-es2015": "^6.13.2",
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.26.0",
+    "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "open-browser-webpack-plugin": "0.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   }

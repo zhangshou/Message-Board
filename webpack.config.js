@@ -23,6 +23,14 @@ module.exports={
                 test:/\.js$/,
                 //设置加载器
                 loader:'babel'
+            },
+            {
+                test:/\.css$/,
+                loader:'style!css'
+            },
+            {
+                test:/\.(png|jpg|bmp|gif|eot|svg|ttf|woff|woff2)$/,
+                loader:'url'
             }
         ]
     },
