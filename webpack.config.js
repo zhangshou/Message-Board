@@ -1,0 +1,20 @@
+//导出一个配置对象
+module.exports={
+    entry:'./app/index.js',//入口文件
+    output:{
+        path:'./build',//打包后的目录名
+        filename:'bundle.js'//指定打包后的文件名
+    },
+    //设置模块加载器
+    module:{
+        //对不同类型的文件如何加载,要有一个转换工具
+        loaders:[
+            {
+                //配置文件匹配的文件后缀名
+                test:/\.js$/,
+                //设置加载器
+                loader:'babel'
+            }
+        ]
+    }
+};
