@@ -5,6 +5,11 @@ module.exports={
         path:'./build',//打包后的目录名
         filename:'bundle.js'//指定打包后的文件名
     },
+    //配置webpack-dev-server
+    devServer:{
+        port:8080,//指定端口号
+        contentBase:'./build'//指定静态文件根目录
+    },
     //设置模块加载器
     module:{
         //对不同类型的文件如何加载,要有一个转换工具
